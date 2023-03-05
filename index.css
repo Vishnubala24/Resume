@@ -45,6 +45,105 @@ body{
     color: lightcyan;
 }
 
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons li {
+    border-radius: 50%;
+}
+
+.social-icons li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.social-icons li a img {
+    width: 1rem;
+    padding: 8px;
+}
+
+.text-center{
+    text-align: center;
+}
+
 #profile-img{
-    
+    position: relative;
+    text-align: center;
+    margin-top: -90px;
+}
+#profile-img img{
+    /* border: 2px solid grey; */
+    box-shadow: 0px 0px 4px 4px whitesmoke;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+/* Skill Section CSS */
+
+.section-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: blueviolet;
+    margin: 50px 0px 30px 0px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.section-content{
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 1.2em;
+}
+
+.all-section{
+    background-color: antiquewhite;   
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 20px;
+}
+
+.skills-display{
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills-display > div{
+    width: 100px;
+    height: 20px;
+    background-color:sandybrown;
+    border: 2px solid black;
+    margin: 10px 20px;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.ninty-percent{
+    width: 80%;
+    height: inherit;
+    background-color: firebrick;
+    border-radius: 20px 0px 0px 20px;
 }
