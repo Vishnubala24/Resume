@@ -104,7 +104,8 @@ body{
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    color: blueviolet;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #9e0a3d;
     margin: 50px 0px 30px 0px;
     padding-top: 20px;
     text-transform: uppercase;
@@ -117,10 +118,17 @@ body{
 }
 
 .all-section{
-    background-color: antiquewhite;   
+    background-color: rgb(245,245,245);   
     width: 80%;
     margin-left: 10%;
     border-radius: 20px;
+    transition: 0.5s ease-in-out ;
+}
+
+.all-section:hover{
+    background-color: 	rgb(232,232,232);
+    width: 82%;
+    margin-left: 9%;
 }
 
 .skills-display{
@@ -132,7 +140,7 @@ body{
 .skills-display > div{
     width: 100px;
     height: 20px;
-    background-color:sandybrown;
+    background-color:burlywood;
     border: 2px solid black;
     margin: 10px 20px;
     border-radius: 20px 20px 20px 20px;
@@ -144,6 +152,69 @@ body{
 .ninty-percent{
     width: 80%;
     height: inherit;
-    background-color: firebrick;
+    background-color:cornflowerblue;
     border-radius: 20px 0px 0px 20px;
+}
+
+
+.timeline{
+    position: relative;
+    border: 2px solid black;
+}
+
+.timeline-box{
+    position: relative;
+    width: 40%;
+    left: 5%;
+    margin: 5px;
+    min-height: 150px;
+    border: 2px solid black;
+}
+
+.timeline-box:nth-child(2n+1){
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgb(179, 13, 244);;
+    left: -10%;
+}
+
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color:rgb(179, 13, 244);
+    right: -12%;
+}
+
+.timeline-divider{
+    position: absolute;
+    width: 0px;
+    height: 75%;
+    border: 2px dotted rgb(152, 160, 249);
+    top: 8%;
+    left: 50%;
+}
+
+.timeline-traveller{
+    position: sticky;
+    rotate: 90deg;
+    top: -10px;
+    /* color: red; */
+}
+
+.timeline-traveller-exp{
+    position: sticky;
+    rotate: 135deg;
+    top: 0%;
 }
